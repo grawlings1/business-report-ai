@@ -42,7 +42,7 @@ function App() {
       setLoading(true);
       setError(null);
       const start = Date.now();
-      const res = await axios.post("https://business-report-ai-1.onrender.com", formData);
+      const res = await axios.post("https://business-report-ai-1.onrender.com/upload", formData);
       const end = Date.now();
       setUploadTime(((end - start) / 1000).toFixed(2));
       setData(res.data.data);
